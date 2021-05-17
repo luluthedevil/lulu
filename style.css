@@ -101,7 +101,7 @@
 section{
     padding: 100px 0;
 }
-.about, .skills{
+.about, .skills, .projects{
     font-family: 'Poppins', sans-serif;
     background: #ddd;
 }
@@ -188,12 +188,12 @@ section .title::after{
 }
 
 /* services section style */
-.services{
+.services, .projects{
     color: #fff;
     background: #111;
     font-family: 'Poppins', sans-serif;
 }
-.services .title::before{
+.services .title::before, .projects .title::before{
     background: #fff;
 }
 .services .title::after{
@@ -297,6 +297,69 @@ section .title::after{
 }
 .skills .skills-content .right .vue::before{
     width: 30%;
+}
+
+/* projects section style */
+.projects .title::after{
+    content: "i made then";
+    background: #111;
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.projects .carousel .card:hover{
+    background: crimson;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 23px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height: 180px;
+    width: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    transition: all 0.5s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dot{
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.5s ease;
+}
+.owl-dot.active{
+    width: 45px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* responsive media query start */
