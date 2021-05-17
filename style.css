@@ -101,6 +101,18 @@
 section{
     padding: 100px 0;
 }
+.about, .skills{
+    font-family: 'Poppins', sans-serif;
+    background: #ddd;
+}
+.about .about-content, 
+.services .serv-content, 
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -131,20 +143,9 @@ section .title::after{
 }
 
 /* about section style */
-.about{
-    font-family: 'Poppins', sans-serif;
-    background: #ddd;
-}
 .about .title::after{
     content: "who I am";
     background: #ddd;
-}
-.about .about-content, 
-.services .serv-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 .about .about-content .left{
     width: 45%;
@@ -239,6 +240,65 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* skills section style */
+.skills .title::after{
+    content: "what i know";
+    background: #ddd;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 80%;
+}
+.skills .skills-content .right .css::before{
+    width: 55%;
+}
+.skills .skills-content .right .javascript::before{
+    width: 40%;
+}
+.skills .skills-content .right .python::before{
+    width: 70%;
+}
+.skills .skills-content .right .vue::before{
+    width: 30%;
+}
+
 /* responsive media query start */
 @media (max-width: 1300px){
     .home .max-width{
@@ -309,6 +369,10 @@ section .title::after{
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 @media (max-width: 690px){
