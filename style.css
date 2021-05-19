@@ -101,13 +101,14 @@
 section{
     padding: 100px 0;
 }
-.about, .skills, .projects{
+.about, .skills, .projects, .contact{
     font-family: 'Poppins', sans-serif;
     background: #ddd;
 }
 .about .about-content, 
 .services .serv-content, 
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -362,6 +363,50 @@ section .title::after{
     margin-top: 20px;
 }
 
+/* contact section style */
+.contact .title::after{
+    content: "get in touch";
+    background: #ddd;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .contact-content .right .img img{
+    width: 550px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 /* responsive media query start */
 @media (max-width: 1300px){
     .home .max-width{
@@ -433,7 +478,8 @@ section .title::after{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column,
+    .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
@@ -451,6 +497,10 @@ section .title::after{
     .services .serv-content .card{
         width: 100%;
     }
+    .contact .contact-content .right .img img{
+        width: 400px;
+        height: 190px;
+    }
 }
 @media (max-width: 500px){
     .max-width{
@@ -461,5 +511,9 @@ section .title::after{
     }
     .home .home-content .text-3{
         font-size: 20px;
+    }
+    .contact .contact-content .right .img img{
+        width: 300px;
+        height: 140px;
     }
 }
