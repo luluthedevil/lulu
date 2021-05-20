@@ -28,6 +28,12 @@ $(document).ready(function(){
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
+    });
+    var typed = new Typed(".typing-2", {
+        strings: ["Developer", "Student"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
     })
     //owl carousel
     $('.carousel').owlCarousel({
