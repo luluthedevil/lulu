@@ -325,7 +325,7 @@ section .title::after{
     width: 40%;
 }
 .skills .skills-content .right .python::before{
-    width: 70%;
+    width: 60%;
 }
 .skills .skills-content .right .react::before{
     width: 40%;
