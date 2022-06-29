@@ -24,17 +24,17 @@ $(document).ready(function(){
     });
     //typing animation
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Student"],
+        strings: ["Developer", "Frontend", "Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-    var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Student"],
+    var typed_2 = new Typed(".typing_2", {
+        strings: ["Developer", "Frontend", "Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    })
+    });
     //owl carousel
     $('.carousel').owlCarousel({
         margin: 20,
