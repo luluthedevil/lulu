@@ -247,6 +247,10 @@ table {
     background: none;
 }
 
+.about .about-content .static_typing {
+    display: none;
+}
+
 /* services section style */
 .services, .projects{
     color: #fff;
@@ -598,5 +602,11 @@ footer span a:hover{
     td, th{
         padding: 3px;
         font-size: 12;
+    }
+    .typing_2, .typed-cursor{
+        display: none;
+    }
+    .about .about-content .static_typing {
+        display: block;
     }
 }
