@@ -343,23 +343,26 @@ table {
     top: 0;
     background: #A020F0;
 }
+.skills .skills-content .right .git::before{
+    width: 80%;
+}
 .skills .skills-content .right .html::before{
     width: 80%;
 }
 .skills .skills-content .right .css::before{
-    width: 55%;
+    width: 75%;
 }
 .skills .skills-content .right .javascript::before{
-    width: 40%;
+    width: 60%;
+}
+.skills .skills-content .right .node::before{
+    width: 60%;
 }
 .skills .skills-content .right .python::before{
     width: 60%;
 }
 .skills .skills-content .right .react::before{
-    width: 40%;
-}
-.skills .skills-content .right .vue::before{
-    width: 30%;
+    width: 50%;
 }
 
 /* projects section style */
