@@ -109,9 +109,9 @@ $(document).ready(function(){
         {   
             "lang": "en",
             "title": "About me",
-            "text1": `I have studied ADS (analysis and systems development) at the IFPB (Instituto Federal da Paraiba) campus Cajazeiras and will graduate in a few months, as goal, I aim to become an excellent Software Developer.`,
+            "text1": `I have studied ADS (analysis and systems development) at the IFPB (Instituto Federal da Paraiba) campus Cajazeiras and will graduate in a few months. As goal, I aim to become an excellent Software Developer.`,
             "text2": `I am a curious, dedicated, motivated person and solving problems makes me excited, studying is part of my day to day and challenges keep me motivated to discover the best solutions. I like programming, reading and doing teamwork where I can learn and also develop collaboration, leadership and management skills. I also like to study languages, I am currently fluent in English and I am studying a little French and Italian on my own.`,
-            "text3": `Currently, I am looking for opportunities in junior positions in a company that will allow me to apply my knowledge so that I can develop my skills and grow with the company and my co-workers.`,
+            "text3": `Currently, I am looking for opportunities in junior positions in a company that will allow me to apply my knowledge so that I can improve myself and grow up with the company and my co-workers.`,
             "langTitle": "Languages I speak",
             "tbListen": "Listening",
             "tbSpeak": "Speaking",
@@ -195,7 +195,7 @@ $(document).ready(function(){
             "lang": "en",
             "title": "My services",
             "title1": "Web",
-            "text1": "I know HTML, CSS, Javascript, Java, Python and other tools as well. There are also other some projects you can check out in my github.",
+            "text1": "I know HTML, CSS, Javascript, Java, Python and other tools as well. There are also some other projects you can check out in my github.",
             "title2": "Code",
             "text2": "I aim for good written code. A code not very well written can become a issue in the future.",
             "title3": "Study",
@@ -237,7 +237,7 @@ $(document).ready(function(){
             "lang": "en",
             "title": "My skills",
             "subtitle": "My creative skill & experiences.",
-            "txt1": "In order to improve my skills, I take lots of online classes to maintain myself on track to what's new. So I usually do projects and maintain then online to show my skills, there are some of then I don't put online because I think they don't have the quality, so even though there's nothing new in my github, that doesn't necesarelly means I'm not doing anything.",
+            "txt1": "In order to improve my skills, I take lots of online classes to maintain myself on track to what's new. So I usually do projects and maintain it online to show my skills, there are some of it I doesn't put online when I think they doesn't have what is necessary. So even though there's nothing new in my github, that doesn't necesarelly means I'm not doing anything.",
             "txt2": "I like my code to have quality, so I always go for it, it's good when you can read a code months later and it still make sense."
         },
         {
