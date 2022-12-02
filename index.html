@@ -19,14 +19,70 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#home">Portifo<span>lio.</span></a></div>
+            <div class="logo">
+                <a href="#home">
+                    Portifo<span>lio.</span>
+                </a>
+            </div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li>
+                    <a href="#home" id="home-nav" class="menu-btn">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" id="about-nav" class="menu-btn">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" id="services-nav" class="menu-btn">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" id="skills-nav" class="menu-btn">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" id="projects-nav" class="menu-btn">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" id="contact-nav" class="menu-btn">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="select-box">
+                            <div class="options-container">
+                                <div class="option for-changing" language="en">
+                                    <input
+                                    type="radio"
+                                    class="radio"
+                                    id="en"
+                                    name="category"
+                                    />
+                                    <label for="en">🇺🇸 En</label>
+                                </div>
+                                <div class="option for-changing" language="pt">
+                                    <input type="radio" class="radio" id="pt" name="category" />
+                                    <label for="pt">🇧🇷 Pt</label>
+                                </div>
+                                <div class="option for-changing" language="fr">
+                                    <input type="radio" class="radio" id="fr" name="category" />
+                                    <label for="fr">🇫🇷 Fr</label>
+                                </div>
+                            </div>
+                            <div class="selected">
+                                🇺🇸 En
+                            </div>
+                        </div>
+                    </a>
+                </li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -39,100 +95,111 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
+                <div id="salution" class="text-1">Hello, my name is</div>
                 <div class="text-2">Luciana Ferreira</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div id="im" class="text-3">And I'm a <span class="typing"></span></div>
             </div>
         </div>
     </section>
 
     <!-- Home section end -->
     
-    <!-- about section start -->
+    <!-- About section start -->
 
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 id="about-title" class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="imgs/SNOW_20220616_130735_582.jpg" alt="Luciana">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Luciana and I'm a <span class="typing_2"></span>
-                    <span class="static_typing">Developer & Frontend & Student</span></div>
-                    <p>I have studied ADS (analysis and systems development) at the IFPB (Instituto Federal da Paraiba) campus Cajazeiras and will graduate in a few months, as goal, I aim to become an excellent Software Developer. For that, I usually take courses and study projects to complement my knowlege.</p>
-                    <p>I like to program, read and perform teamwork where I can learn and also develop my skills of collaboration, leadership and management.</p>
-                    <p>I like to describe myself as a dedicated, motivated and dynamic. Right now I am searching for opportunities to develop myself in a company that allows me to apply the knowlege I have acquired in my graduation and courses, so I can develop myself even more in the Software Development area.</p>
-                    <p>Thank you for you attention, for more information, send me an email.</p>
-                    <h3 class="my-languages">Languages I speak</h3>
+                    <div class="text">
+                        I'm Luciana and I'm a 
+                        <span class="typing_2"></span>
+                        <span class="static_typing">
+                            Developer & Frontend & Student
+                        </span>
+                    </div>
+                    <p id="about-text-1">
+                        I have studied ADS (analysis and systems development) at the IFPB (Instituto Federal da Paraiba) campus Cajazeiras and will graduate in a few months, as goal, I aim to become an excellent Software Developer. For that, I usually take courses and study projects to complement my knowlege.
+                    </p>
+                    <p id="about-text-2">
+                        I like to program, read and perform teamwork where I can learn and also develop my skills of collaboration, leadership and management.
+                    </p>
+                    <p id="about-text-3">
+                        I like to describe myself as a dedicated, motivated and dynamic. Right now I am searching for opportunities to develop myself in a company that allows me to apply the knowlege I have acquired in my graduation and courses, so I can develop myself even more in the Software Development area.
+                    </p>
+                    <h3 id="lang-title" class="my-languages">Languages I speak</h3>
                     <table>
                         <tr>
                             <th></th>
-                            <th>Listening</th>
-                            <th>Speaking</th>
-                            <th>Writing</th>
+                            <th id="tb-listen">Listening</th>
+                            <th id="tb-speak">Speaking</th>
+                            <th id="tb-write">Writing</th>
                         </tr>
                         <tr>
-                            <th>Portuguese (br)</th>
-                            <td>Native</td>
-                            <td>Native</td>
-                            <td>Native</td>
+                            <th id="tb-port">Portuguese (br)</th>
+                            <td class="tb-nat">Native</td>
+                            <td class="tb-nat">Native</td>
+                            <td class="tb-nat">Native</td>
                         </tr>
                         <tr>
-                            <th>English</th>
-                            <td>Advanced</td>
-                            <td>Advanced</td>
-                            <td>Intermediary</td>
+                            <th id="tb-en">English</th>
+                            <td class="tb-fluent">Fluent</td>
+                            <td class="tb-fluent">Fluent</td>
+                            <td class="tb-fluent">Fluent</td>
                         </tr>
                         <tr>
-                            <th>Japanese</th>
-                            <td>Intermediary</td>
-                            <td>Beginner</td>
-                            <td>Beginner</td>
+                            <th id="tb-fr">French</th>
+                            <td class="tb-inter">Intermediary</td>
+                            <td class="tb-beggin">Beginner</td>
+                            <td class="tb-inter">Intermediary</td>
                         </tr>
                         <tr>
-                            <th>French</th>
-                            <td>Intermediary</td>
-                            <td>Beginner</td>
-                            <td>Intermediary</td>
+                            <th id="tb-jp">Japanese</th>
+                            <td class="tb-inter">Intermediary</td>
+                            <td class="tb-beggin">Beginner</td>
+                            <td class="tb-beggin">Beginner</td>
                         </tr>
-                        
-                      </table>
-                      <a href="https://github.com/luluthedevil">Check out my github</a>
+                    </table>
+                    <a id="check-git" href="https://github.com/luluthedevil">
+                        Check out my github
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- about section end -->
+    <!-- About section end -->
     
-    <!-- services section start -->
+    <!-- Services section start -->
 
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 id="services-title" class="title">My services</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush">
-                            <div class="text">Web</div>
-                            <p>I know HTML, CSS and Javascript as you can see here, there are some other projects with other languages too.</p>
+                            <div id="services-title-1" class="text">Web</div>
+                            <p id="services-txt-1">I know HTML, CSS, Javascript, Java, Python and other tools as well. There are also other some projects you can check out in my github.</p>
                         </i>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code">
-                            <div class="text">Code</div>
-                            <p>I aim for good written code. A code not very well written can become a issue in the future.</p>
+                            <div id="services-title-2" class="text">Code</div>
+                            <p id="services-txt-2">I aim for good written code. A code not very well written can become a issue in the future.</p>
                         </i>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line">
-                            <div class="text">Study</div>
-                            <p>I like to study and discover new things and I'm always open to feedback conversations.</p>
+                            <div id="services-title-3" class="text">Study</div>
+                            <p id="services-txt-3">Studying is part of my day to day and challenges keep me motivated to discover the best solutions for the coding problems.</p>
                         </i>
                     </div>
                 </div>
@@ -140,18 +207,20 @@
         </div>
     </section>
 
-    <!-- services section end -->
+    <!-- Services section end -->
 
-    <!-- skills section start -->
+    <!-- Skills section start -->
 
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 id="skills-title" class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My creative skill & experiences.</div>
-                    <p>In order to improve my skills, I take lots of online classes to maintain myself on track to what's new. So I usually do projects and maintain then online to show my skills, a lot of then I don't put online because they don't have the quality I want, so even though there's nothing new in my github, that doesn't necesarelly means I'm not doing anything.</p>
-                    <p>I like my code to have quality, so I always go for it, it's good when you can read a code months later and it still make sense.</p>
+                    <div id="skills-subtitle" class="text">
+                        My creative skill & experiences.
+                    </div>
+                    <p id="skills-txt-1">In order to improve my skills, I take lots of online classes to maintain myself on track to what's new. So I usually do projects and maintain then online to show my skills, there are some of then I don't put online because I think they don't have the quality, so even though there's nothing new in my github, that doesn't necesarelly means I'm not doing anything.</p>
+                    <p id="skills-txt-2">I like my code to have quality, so I always go for it, it's good when you can read a code months later and it still make sense.</p>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -208,143 +277,219 @@
         </div>
     </section>
 
-    <!-- skills section end -->
+    <!-- Skills section end -->
 
-    <!-- projects section start -->
+    <!-- Projects section start -->
 
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">My projects</h2>
+            <h2 id="projects-title" class="title">My projects</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
                         <img src="imgs/Captura de tela de 2021-10-06 20-43-24.png" alt="Eletronic urn">
-                        <div class="text">Eletronic urn</div>
-                        <p>Brazilian eletronic urn, it's how we vote in elections. Made with Javascript</p>
-                        <p><a href="https://github.com/luluthedevil/eletronic-urn">github</a></p>
-                        <p><a href="https://luluthedevil.github.io/eletronic-urn/">Test it</a></p>
+                        <div id="proj-title-eletc-urn" class="text">
+                            Eletronic urn
+                        </div>
+                        <p id="proj-txt-eletc-urn">
+                            Brazilian electronic urn, it's how we vote in elections. Made with Javascript
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/eletronic-urn">
+                                github
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://luluthedevil.github.io/eletronic-urn/">
+                                Test it
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/onlinecanvas.png" alt="Online paint">
-                        <div class="text">Online paint</div>
-                        <p>Online canvas that you can draw and download the image backgroundless. Made with Javascript</p>
-                        <p><a href="https://github.com/luluthedevil/simple-paint/">github</a></p>
-                        <p><a href="https://luluthedevil.github.io/simple-paint/">Test it</a></p>
+                        <div id="proj-title-onl-paint" class="text">
+                            Online paint
+                        </div>
+                        <p id="proj-txt-onl-paint">
+                            Online canvas that you can draw and download the image backgroundless. Made with Javascript
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/simple-paint/">
+                                github
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://luluthedevil.github.io/simple-paint/">
+                                Test it
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/bookstore-1.png" alt="Bookstore">
-                        <div class="text">Bookstore</div>
-                        <p>Bookstore made with Angular and Spring(Java)</p>
-                        <p><a href="https://github.com/luluthedevil/crud-angular-java-bookstore">github</a></p>
+                        <div id="proj-title-bookstore" class="text">
+                            Bookstore
+                        </div>
+                        <p id="proj-txt-bookstore">
+                            Bookstore made with Angular and Spring(Java)
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/crud-angular-java-bookstore">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/todo-list.png" alt="todo list">
-                        <div class="text">Todo list</div>
-                        <p>Todo list with react</p>
-                        <p><a href="https://github.com/luluthedevil/todo_list-react">github</a></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="imgs/crud-angular-spring-cats.png" alt="Crud angular and spring about cats">
-                        <div class="text">Crud angular and spring about cats</div>
-                        <p>CRUD made with AngularJS and Spring about cats.</p>
-                        <p><a href="https://github.com/luluthedevil/crud-angular-java-cats">github</a></p>
+                        <div id="proj-title-todo" class="text">
+                            Todo list
+                        </div>
+                        <p id="proj-txt-todo">
+                            Todo list with react
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/todo_list-react">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/memory_game.png" alt="Memory game">
-                        <div class="text">Memory game</div>
-                        <p>Simple memory game with javascript.</p>
-                        <p><a href="https://github.com/luluthedevil/memory_game">github</a></p>
-                        <p><a href="https://luluthedevil.github.io/memory_game/">Try it</a></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="imgs/weather_javascript_api.png" alt="Weather aplication">
-                        <div class="text">Weather aplication</div>
-                        <p>Simple weather aplication with javascript that gets data from public API.</p>
-                        <p><a href="https://github.com/luluthedevil/javascript_weather_withAPI">github</a></p>
+                        <div id="proj-title-memory" class="text">
+                            Memory game
+                        </div>
+                        <p id="proj-txt-memory">
+                            Simple memory game with javascript
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/memory_game">
+                                github
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://luluthedevil.github.io/memory_game/">
+                                Try it
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/tetris.png" alt="tetris">
-                        <div class="text">Tetris game</div>
-                        <p>Tetris game with python</p>
-                        <p><a href="https://github.com/luluthedevil/tetris-python">github</a></p>
+                        <div id="proj-title-tetris" class="text">
+                            Tetris game
+                        </div>
+                        <p id="proj-txt-tetris">
+                            Tetris game with python
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/tetris-python">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/connect_four.png" alt="connect four">
-                        <div class="text">Connect four game</div>
-                        <p>Connect four game with python</p>
-                        <p><a href="https://github.com/luluthedevil/connect_four-python">github</a></p>
+                        <div id="proj-title-connect-4" class="text">
+                            Connect four game
+                        </div>
+                        <p id="proj-txt-connect-4">
+                            Connect four game with python
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/connect_four-python">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/snake-python.png" alt="pong">
-                        <div class="text">Snake game</div>
-                        <p>Snake game with python</p>
-                        <p><a href="https://github.com/luluthedevil/snake-python">github</a></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="imgs/pong.png" alt="pong">
-                        <div class="text">Pong.py</div>
-                        <p>Pong with python</p>
-                        <p><a href="https://github.com/luluthedevil/pong.py">github</a></p>
+                        <div id="proj-title-snake" class="text">
+                            Snake game
+                        </div>
+                        <p id="proj-txt-snake">
+                            Snake game with python
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/snake-python">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/WhatsApp Image 2021-09-05 at 12.00.22.jpeg" alt="Github api project">
-                        <div class="text">Github api project</div>
-                        <p>A github API project I made with React.</p>
-                        <p><a href="https://github.com/luluthedevil/github-api-code">github</a></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="imgs/Captura de tela de 2021-05-27 16-48-58.png" alt="React recipe site">
-                        <div class="text">React recipe site</div>
-                        <p>A simple website made with react, the recipes are from an API.</p>
-                        <p><a href="https://github.com/luluthedevil/react-recipe-site">github</a></p>
+                        <div id="proj-title-git-api" class="text">
+                            Github api project
+                        </div>
+                        <p id="proj-txt-git-api">
+                            Getting github API info from specific user. Made with React
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/github-api-code">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/Captura de tela de 2021-05-17 14-13-53.png" alt="Pacman game">
-                        <div class="text">Pacman game</div>
-                        <p>A mini game made with python.</p>
-                        <p><a href="https://github.com/luluthedevil/pacman_python">github</a></p>
+                        <div id="proj-title-pacman" class="text">
+                            Pacman game
+                        </div>
+                        <p id="proj-txt-pacman">
+                            A pacman game made with python and pygame
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/pacman_python">
+                                github
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/Captura de tela de 2021-05-17 15-40-47.png" alt="Zombie game">
-                        <div class="text">Zombie game</div>
-                        <p>A zombie game made with C# in unity.</p>
-                        <p><a href="https://github.com/luluthedevil/Zombie_game">github</a></p>
-                        <p><a href="https://luluthedevil.github.io/Zombie_game/">Play now!</a></p>
+                        <div id="proj-title-zombie" class="text">
+                            Zombie game
+                        </div>
+                        <p id="proj-txt-zombie">
+                            A zombie game made with C# in unity, it has music
+                        </p>
+                        <p>
+                            <a href="https://github.com/luluthedevil/Zombie_game">
+                                github
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://luluthedevil.github.io/Zombie_game/">
+                                Play now!
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="imgs/Captura de tela de 2021-05-17 15-49-09.png" alt="Freeway game">
-                        <div class="text">Freeway game</div>
-                        <p>A freeway (cross the street) game made with java script.</p>
+                        <div id="proj-title-freeway" class="text">
+                            Freeway game
+                        </div>
+                        <p id="proj-txt-freeway">
+                            A freeway (cross the street) game made with javascript
+                        </p>
                         <p><a href="https://github.com/luluthedevil/TrabalhoGerencia">github</a></p>
                     </div>
                 </div>
@@ -352,17 +497,21 @@
         </div>
     </section>
 
-    <!-- projects section end -->
+    <!-- Projects section end -->
     
-    <!-- contact section start -->
+    <!-- Contact section start -->
 
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 id="contact-title" class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Get in touch</div>
-                    <p>Contact me if you want to schedule a meeting to know more about my skills and how I am a good choice for your company.</p>
+                    <div id="contact-subtitle" class="text">
+                        Get in touch
+                    </div>
+                    <p id="contact-text">
+                        Contact me if you want to schedule a meeting to know more about my skills and how I am a good choice for your company.
+                    </p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -398,15 +547,15 @@
         </div>
     </section>
 
-    <!-- contact section end -->
+    <!-- Contact section end -->
     
-    <!-- footer section start -->
+    <!-- Footer section start -->
 
     <footer>
         <span>Created by <a href="https://github.com/luluthedevil">Luluthedevil</a> | <span class="far fa-copyright"> 2021 All rights reserved.</span></span>
     </footer>
 
-
     <script src="script.js"></script>
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>
