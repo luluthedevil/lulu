@@ -603,8 +603,6 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-    }.select-box .options-container.active {
-        max-height: 120px;
     }
     .home .home-content .text-2{
         font-size: 55px;
@@ -637,6 +635,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 690px){
+    .select-box .options-container.active {
+        max-height: 120px;
+    }
     .max-width{
         padding: 0 25px;
     }
