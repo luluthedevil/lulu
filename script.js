@@ -270,8 +270,8 @@ $(document).ready(function(){
             "proj-txt-eletc-urn": "Brazilian electronic urn, it's how we vote in elections. Made with Javascript",
             "proj-title-onl-paint": "Online paint",
             "proj-txt-onl-paint": "Online canvas that you can draw and download the image backgroundless. Made with Javascript",
-            "proj-title-bookstore": "Bookstore",
-            "proj-txt-bookstore": "Bookstore made with Angular and Spring(Java)",
+            "proj-title-drumkit": "Drum kit",
+            "proj-txt-drumkit": "Drum kit with sound and basic button press animation (keyboard as well), made with javascript",
             "proj-title-todo": "Todo list",
             "proj-txt-todo": "Todo list with react",
             "proj-title-memory": "Memory game",
@@ -298,8 +298,8 @@ $(document).ready(function(){
             "proj-txt-eletc-urn": "Nossa urna eletrônica, é como votamos. Feita com javascript",
             "proj-title-onl-paint": "Paint online",
             "proj-txt-onl-paint": "Paint online que você pode desenhar e baixar a imagem sem fundo. Feito com Javascript",
-            "proj-title-bookstore": "Livraria",
-            "proj-txt-bookstore": "Livraria feita com Angular e Spring(Java)",
+            "proj-title-drumkit": "Kit de bateria",
+            "proj-txt-drumkit": "Bateria com som e animação básica de pressionamento de botão (teclado também), feito com javascript",
             "proj-title-todo": "Lista de afazeres",
             "proj-txt-todo": "Lista de afazeres com react",
             "proj-title-memory": "Jogo da memória",
@@ -328,8 +328,8 @@ $(document).ready(function(){
             "proj-title-onl-paint": "Peinture en ligne",
             "proj-txt-onl-paint": "Toile en ligne que vous pouvez dessiner et télécharger l'image sans arrière-plan. Réalisé avec Javascript",
 
-            "proj-title-bookstore": "Librairie",
-            "proj-txt-bookstore": "Librairie réalisée avec Angular et Spring (Java)",
+            "proj-title-drumkit": "Kit de batterie",
+            "proj-txt-drumkit": "Kit de batterie avec son et animation de pression de bouton de base (clavier également), réalisé avec javascript",
 
             "proj-title-todo": "Liste de choses à faire",
             "proj-txt-todo": "Liste de tâches avec react",
@@ -369,8 +369,8 @@ $(document).ready(function(){
     const projTitleOnlPaint = document.getElementById('proj-title-onl-paint');
     const projTxtOnlPaint = document.getElementById('proj-txt-onl-paint');
 
-    const projTitleBookstore = document.getElementById('proj-title-bookstore');
-    const projTxtBookstore = document.getElementById('proj-txt-bookstore');
+    const projTitleDrumkit = document.getElementById('proj-title-drumkit');
+    const projTxtDrumkit = document.getElementById('proj-txt-drumkit');
 
     const projTitleTodo = document.getElementById('proj-title-todo');
     const projTxtTodo = document.getElementById('proj-txt-todo');
@@ -484,8 +484,8 @@ $(document).ready(function(){
                     projTitleOnlPaint.textContent = projectsData[i]["proj-title-onl-paint"];
                     projTxtOnlPaint.textContent = projectsData[i]["proj-txt-onl-paint"];
 
-                    projTitleBookstore.textContent = projectsData[i]["proj-title-bookstore"];
-                    projTxtBookstore.textContent = projectsData[i]["proj-txt-bookstore"];
+                    projTitleDrumkit.textContent = projectsData[i]["proj-title-drumkit"];
+                    projTxtDrumkit.textContent = projectsData[i]["proj-txt-drumkit"];
 
                     projTitleTodo.textContent = projectsData[i]["proj-title-todo"];
                     projTxtTodo.textContent = projectsData[i]["proj-txt-todo"];
