@@ -96,14 +96,6 @@ $(document).ready(function(){
 
     const link = document.querySelectorAll('.for-changing');
 
-    const homenav = document.getElementById('home-nav');
-    const aboutnav = document.getElementById('about-nav');
-    const servicesnav = document.getElementById('services-nav');
-    const skillsnav = document.getElementById('skills-nav');
-    const projectsnav = document.getElementById('projects-nav');
-    const contactnav = document.getElementById('contact-nav');
-    const salution = document.getElementById('salution');
-
     const aboutData = [
         {   
             "lang": "en",
@@ -170,24 +162,6 @@ $(document).ready(function(){
         }
     ];
 
-    const aboutTitle = document.getElementById('about-title');
-    const aboutText1 = document.getElementById('about-text-1');
-    const aboutText2 = document.getElementById('about-text-2');
-    const aboutText3 = document.getElementById('about-text-3');
-    const langTitle = document.getElementById('lang-title');
-    const tbListen = document.getElementById('tb-listen');
-    const tbSpeak = document.getElementById('tb-speak');
-    const tbWrite = document.getElementById('tb-write');
-    const tbPort = document.getElementById('tb-port');
-    const tbEn = document.getElementById('tb-en');
-    const tbFr = document.getElementById('tb-fr');
-    const tbJp = document.getElementById('tb-jp');
-    const tbNat = document.querySelectorAll('.tb-nat');
-    const tbFluent = document.querySelectorAll('.tb-fluent');
-    const tbInter = document.querySelectorAll('.tb-inter');
-    const tbBeggin = document.querySelectorAll('.tb-beggin');
-    const checkGit = document.getElementById('check-git');
-
     const servicesData = [
         {
             "lang": "en",
@@ -221,14 +195,6 @@ $(document).ready(function(){
         }
     ];
 
-    const servicesTitle = document.getElementById('services-title');
-    const servicesTitle1 = document.getElementById('services-title-1');
-    const servicesTitle2 = document.getElementById('services-title-2');
-    const servicesTitle3 = document.getElementById('services-title-3');
-    const servicesTxt1 = document.getElementById('services-txt-1');
-    const servicesTxt2 = document.getElementById('services-txt-2');
-    const servicesTxt3 = document.getElementById('services-txt-3');
-
     const skillsData = [
         {
             "lang": "en",
@@ -252,11 +218,6 @@ $(document).ready(function(){
             "txt2": "J'aime que mon code soit de qualité, donc j'y vais toujours, c'est bien quand on peut lire un code des mois plus tard et que ça a toujours du sens."
         },
     ];
-
-    const skillsTitle = document.getElementById('skills-title');
-    const skillsSubtitle = document.getElementById('skills-subtitle');
-    const skillsTxt1 = document.getElementById('skills-txt-1');
-    const skillsTxt2 = document.getElementById('skills-txt-2');
 
     const projectsData = [
         {
@@ -335,36 +296,6 @@ $(document).ready(function(){
         },
     ];
 
-    //getting the projects section texts
-    const projectsTitle = document.getElementById('projects-title');
-
-    const projTitleEletcUrn = document.getElementById('proj-title-eletc-urn');
-    const projTxtEletcUrn = document.getElementById('proj-txt-eletc-urn');
-
-    const projTitleOnlPaint = document.getElementById('proj-title-onl-paint');
-    const projTxtOnlPaint = document.getElementById('proj-txt-onl-paint');
-
-    const projTitleDrumkit = document.getElementById('proj-title-drumkit');
-    const projTxtDrumkit = document.getElementById('proj-txt-drumkit');
-
-    const projTitleTodo = document.getElementById('proj-title-todo');
-    const projTxtTodo = document.getElementById('proj-txt-todo');
-
-    const projTitleMemory = document.getElementById('proj-title-memory');
-    const projTxtMemory = document.getElementById('proj-txt-memory');
-
-    const projTitleTetris = document.getElementById('proj-title-tetris');
-    const projTxtTetris = document.getElementById('proj-txt-tetris');
-
-    const projTitleGitAPI = document.getElementById('proj-title-git-api');
-    const projTxtGitAPI = document.getElementById('proj-txt-git-api');
-
-    const projTitlePacman = document.getElementById('proj-title-pacman');
-    const projTxtPacman = document.getElementById('proj-txt-pacman');
-
-    const projTitleZombie = document.getElementById('proj-title-zombie');
-    const projTxtZombie = document.getElementById('proj-txt-zombie');
-
     const contactData = [
         {
             "lang": "en",
@@ -386,101 +317,105 @@ $(document).ready(function(){
         },
     ];
 
-    //getting the contact section texts
-    const contactTitle = document.getElementById('contact-title');
-    const contactSubtitle = document.getElementById('contact-subtitle');
-    const contactText = document.getElementById('contact-text');
-
     link.forEach(el => {
         el.addEventListener('click', () => {
             const attr = el.getAttribute('language');
             for(let i=0; i < data.length; i++) {
                 if(data[i].lang == attr) {
                     //getting the home and nav texts and modifing then
-                    homenav.textContent = data[i].menu[0];
-                    aboutnav.textContent = data[i].menu[1];
-                    servicesnav.textContent = data[i].menu[2];
-                    skillsnav.textContent = data[i].menu[3];
-                    projectsnav.textContent = data[i].menu[4];
-                    contactnav.textContent = data[i].menu[5];
-                    salution.textContent = data[i].salution;
+                    $('#home-nav').text(data[i].menu[0]);
+                    $('#about-nav').text(data[i].menu[1]);
+                    $('#services-nav').text(data[i].menu[2]);
+                    $('#skills-nav').text(data[i].menu[3]);
+                    $('#projects-nav').text(data[i].menu[4]);
+                    $('#contact-nav').text(data[i].menu[5]);
+                    $('#salution').text(data[i].salution);
 
                     //getting the about section texts and modifing them
-                    aboutTitle.textContent = aboutData[i].title;
-                    aboutText1.textContent = aboutData[i].text1;
-                    aboutText2.textContent = aboutData[i].text2;
-                    aboutText3.textContent = aboutData[i].text3;
-                    langTitle.textContent = aboutData[i].langTitle;
-                    tbListen.textContent = aboutData[i].tbListen;
-                    tbSpeak.textContent = aboutData[i].tbSpeak;
-                    tbWrite.textContent = aboutData[i].tbWrite;
-                    tbPort.textContent = aboutData[i].tbPort;
-                    tbEn.textContent = aboutData[i].tbEng;
-                    tbFr.textContent = aboutData[i].tbFr;
-                    tbJp.textContent = aboutData[i].tbJp;
-                    tbNat.forEach(txt => {
-                        txt.textContent = aboutData[i].tbNat;
+                    $('#about-title').text(aboutData[i].title);
+                    $('#about-text-1').text(aboutData[i].text1);
+                    $('#about-text-2').text(aboutData[i].text2);
+                    $('#about-text-3').text(aboutData[i].text3);
+                    $('#lang-title').text(aboutData[i].langTitle);
+                    $('#tb-listen').text(aboutData[i].tbListen);
+                    $('#tb-speak').text(aboutData[i].tbSpeak);
+                    $('#tb-write').text(aboutData[i].tbWrite);
+                    $('#tb-port').text(aboutData[i].tbPort);
+                    $('#tb-en').text(aboutData[i].tbEng);
+                    $('#tb-fr').text(aboutData[i].tbFr);
+                    $('#tb-jp').text(aboutData[i].tbJp);
+                    $('.tb-nat').each(function() {
+                        $(this).text(aboutData[i].tbNat);
                     });
-                    tbFluent.forEach(txt => {
-                        txt.textContent = aboutData[i].tbFluent;
+                    $('.tb-fluent').each(function() {
+                        $(this).text(aboutData[i].tbFluent);
                     });
-                    tbInter.forEach(txt => {
-                        txt.textContent = aboutData[i].tbInter;
+                    $('.tb-inter').each(function() {
+                        $(this).text(aboutData[i].tbInter);
                     });
-                    tbBeggin.forEach(txt => {
-                        txt.textContent = aboutData[i].tbBeggin;
+                    $('.tb-beggin').each(function() {
+                        $(this).text(aboutData[i].tbBeggin);
                     });
-                    checkGit.textContent = aboutData[i].checkGit;
+                    $('#check-git').text(aboutData[i].checkGit);
 
                     //getting the about section texts and modifing them
-                    servicesTitle.textContent = servicesData[i].title;
-                    servicesTitle1.textContent = servicesData[i].title1;
-                    servicesTitle2.textContent = servicesData[i].title2;
-                    servicesTitle3.textContent = servicesData[i].title3;
-                    servicesTxt1.textContent = servicesData[i].text1;
-                    servicesTxt2.textContent = servicesData[i].text2;
-                    servicesTxt3.textContent = servicesData[i].text3;
+                    $('#services-title').text(servicesData[i].title);
+                    $('#services-title-1').text(servicesData[i].title1);
+                    $('#services-title-2').text(servicesData[i].title2);
+                    $('#services-title-3').text(servicesData[i].title3);
+                    $('#services-txt-1').text(servicesData[i].text1);
+                    $('#services-txt-2').text(servicesData[i].text2);
+                    $('#services-txt-3').text(servicesData[i].text3);
 
                     //getting the skills section texts and modifing them
-                    skillsTitle.textContent = skillsData[i].title;
-                    skillsSubtitle.textContent = skillsData[i].subtitle;
-                    skillsTxt1.textContent = skillsData[i].txt1;
-                    skillsTxt2.textContent = skillsData[i].txt2;
+                    $('#skills-title').text(skillsData[i].title);
+                    $('#skills-subtitle').text(skillsData[i].subtitle);
+                    $('#skills-txt-1').text(skillsData[i].txt1);
+                    $('#skills-txt-2').text(skillsData[i].txt2);
 
                     //getting the projects section texts
-                    projectsTitle.textContent = projectsData[i].title;
+                    $('#projects-title').text(projectsData[i].title);
 
-                    projTitleEletcUrn.textContent = projectsData[i]["proj-title-eletc-urn"];
-                    projTxtEletcUrn.textContent = projectsData[i]["proj-txt-eletc-urn"];
+                    $('#proj-title-eletc-urn').text(projectsData[i]["proj-title-eletc-urn"]);
+                    $('#proj-txt-eletc-urn').text(projectsData[i]["proj-txt-eletc-urn"]);
 
-                    projTitleOnlPaint.textContent = projectsData[i]["proj-title-onl-paint"];
-                    projTxtOnlPaint.textContent = projectsData[i]["proj-txt-onl-paint"];
+                    $('#proj-title-onl-paint').text(projectsData[i]["proj-title-onl-paint"]);
+                    $('#proj-txt-onl-paint').text(projectsData[i]["proj-txt-onl-paint"]);
 
-                    projTitleDrumkit.textContent = projectsData[i]["proj-title-drumkit"];
-                    projTxtDrumkit.textContent = projectsData[i]["proj-txt-drumkit"];
+                    $('#proj-title-drumkit').text(projectsData[i]["proj-title-drumkit"]);
+                    $('#proj-txt-drumkit').text(projectsData[i]["proj-txt-drumkit"]);
 
-                    projTitleTodo.textContent = projectsData[i]["proj-title-todo"];
-                    projTxtTodo.textContent = projectsData[i]["proj-txt-todo"];
+                    $('#proj-title-todo').text(projectsData[i]["proj-title-todo"]);
+                    $('#proj-txt-todo').text(projectsData[i]["proj-txt-todo"]);
 
-                    projTitleMemory.textContent = projectsData[i]["proj-title-memory"];
-                    projTxtMemory.textContent = projectsData[i]["proj-txt-memory"];
+                    $('#proj-title-memory').text(projectsData[i]["proj-title-memory"]);
+                    $('#proj-txt-memory').text(projectsData[i]["proj-txt-memory"]);
 
-                    projTitleTetris.textContent = projectsData[i]["proj-title-tetris"];
-                    projTxtTetris.textContent = projectsData[i]["proj-txt-tetris"];
+                    $('#proj-title-tetris').text(projectsData[i]["proj-title-tetris"]);
+                    $('#proj-txt-tetris').text(projectsData[i]["proj-txt-tetris"]);
 
-                    projTitleGitAPI.textContent = projectsData[i]["proj-title-git-api"];
-                    projTxtGitAPI.textContent = projectsData[i]["proj-txt-git-api"];
+                    $('#proj-title-connect-4').text(projectsData[i]["proj-title-connect-4"]);
+                    $('#proj-txt-connect-4').text(projectsData[i]["proj-txt-connect-4"]);
 
-                    projTitlePacman.textContent = projectsData[i]["proj-title-pacman"];
-                    projTxtPacman.textContent = projectsData[i]["proj-txt-pacman"];
+                    $('#proj-title-snake').text(projectsData[i]["proj-title-snake"]);
+                    $('#proj-txt-snake').text(projectsData[i]["proj-txt-snake"]);
+                
+                    $('#proj-title-git-api').text(projectsData[i]["proj-title-git-api"]);
+                    $('#proj-txt-git-api').text(projectsData[i]["proj-txt-git-api"]);
 
-                    projTitleZombie.textContent = projectsData[i]["proj-title-zombie"];
-                    projTxtZombie.textContent = projectsData[i]["proj-txt-zombie"];
+                    $('#proj-title-pacman').text(projectsData[i]["proj-title-pacman"]);
+                    $('#proj-txt-pacman').text(projectsData[i]["proj-txt-pacman"]);
+
+                    $('#proj-title-zombie').text(projectsData[i]["proj-title-zombie"]);
+                    $('#proj-txt-zombie').text(projectsData[i]["proj-txt-zombie"]);
+
+                    $('#proj-title-freeway').text(projectsData[i]["proj-title-freeway"]);
+                    $('#proj-txt-freeway').text(projectsData[i]["proj-txt-freeway"]);
 
                     //getting the contact section texts and modifing them
-                    contactTitle.textContent = contactData[i].title;
-                    contactSubtitle.textContent = contactData[i].subtitle;
-                    contactText.textContent = contactData[i].text;
+                    $('#contact-title').text(contactData[i].title);
+                    $('#contact-subtitle').text(contactData[i].subtitle);
+                    $('#contact-text').text(contactData[i].text);
                 }
             }
         });
