@@ -478,9 +478,9 @@ $(document).ready(function(){
                     projTxtZombie.textContent = projectsData[i]["proj-txt-zombie"];
 
                     //getting the contact section texts and modifing them
-                    $('#contact-title').text(contactData[i].title);
-                    $('#contact-subtitle').text(contactData[i].subtitle);
-                    $('#contact-text').text(contactData[i].text);
+                    contactTitle.textContent = contactData[i].title;
+                    contactSubtitle.textContent = contactData[i].subtitle;
+                    contactText.textContent = contactData[i].text;
                 }
             }
         });
