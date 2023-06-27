@@ -91,6 +91,12 @@ $(document).ready(function(){
             "menu": ["Debut", "Propos", "Services", "Compétences", "Projets", "Contactez"],
             "typingAnimation": ["Développeuse", "Frontend"],
             "salution": "Salut, je m'appelle"
+        },
+        {
+            "lang": "es",
+            "menu": ["Inicio", "Acerca de", "Servicios", "Habilidades", "Proyectos", "Contacto"],
+            "typingAnimation": ["Desarrollador", "Interfaz de usuario"],
+            "salution": "Hola me llamo"
         }
     ];
 
@@ -100,16 +106,16 @@ $(document).ready(function(){
         {   
             "lang": "en",
             "title": "About me",
-            "text1": `I have studied ADS (analysis and systems development) at the IFPB (Instituto Federal da Paraiba) campus Cajazeiras and will graduate in a few months. As goal, I aim to become an excellent Software Developer.`,
-            "text2": `I am a curious, dedicated, motivated person and solving problems makes me excited, studying is part of my day to day and challenges keep me motivated to discover the best solutions. I like programming, reading and doing teamwork where I can learn and also develop collaboration, leadership and management skills. I also like to study languages, I am currently fluent in English and I am studying a little French and Italian on my own.`,
-            "text3": `Currently, I am looking for opportunities in junior positions in a company that will allow me to apply my knowledge so that I can improve myself and grow up with the company and my co-workers.`,
-            "langTitle": "Languages I speak",
+            "text1": `I'm Luciana Ferreira, a professional passionate about data analysis. I studied Systems Analysis and Development at the Federal Institute of Science, Technology and Education of Paraíba (IFPB). I am currently committed to continually improving myself through independent study and online courses. I value both technical and soft skills, and am familiar with programming languages such as Python, SQL and JavaScript. My main focus is on data analysis and machine learning, constantly looking to develop my skills in these areas.`,
+            "text2": `I am a dedicated and determined person, always willing to face challenges. I have a continuous learning mindset, constantly looking to improve my skills and knowledge. I am resilient in the face of obstacles, able to solve problems creatively and efficiently. I have excellent data visualization skills, transforming complex information into visually appealing and understandable representations. My passion for data analysis drives me to deliver high quality results and constantly strive for excellence.`,
+            "text3": `I am determined to make a significant difference in the field of data science by working alongside colleagues who share my passion for data analysis and are willing to work hard to achieve common goals. Additionally, I am committed to learning additional languages to communicate effectively in a global environment.`,
             "tbListen": "Listening",
             "tbSpeak": "Speaking",
             "tbWrite": "Writing",
             "tbPort": "Portuguese (br)",
             "tbEng": "English",
             "tbFr": "French",
+            "tbEs": "Spanish",
             "tbJp": "Japanese",
             "tbNat": "Native",
             "tbFluent": "Fluent",
@@ -121,9 +127,9 @@ $(document).ready(function(){
         {   
             "lang": "pt",
             "title": "Sobre mim",
-            "text1": `Estudei ADS (Análise e Desenvolvimento de Sistemas) pelo IFPB Campus Cajazeiras e me formarei dentro de alguns meses, tenho como objetivo me tornar uma excelente desenvolvedora de software. `,
-            "text2": `Sou uma pessoa curiosa, dedicada, motivada e resolver problemas me deixa entusiasmada, estudar faz parte do meu dia a dia e os desafios me mantém sempre motivada a descobrir as melhores soluções. Gosto de programar, ler e realizar trabalhos em equipe onde posso aprender e também desenvolver habilidades de colaboração, liderança e gestão. Também gosto de estudar idiomas, atualmente tenho fluência no inglês e estou estudando por conta própria um pouco de francês e italiano. `,
-            "text3": `Atualmente, busco oportunidades em vagas júnior em uma empresa que me permita aplicar meus conhecimentos para que possa desenvolver minhas habilidades e crescer junto da empresa e de meus colegas de trabalho.`,
+            "text1": `Sou Luciana Ferreira, uma profissional apaixonada por análise de dados. Cursei Análise e Desenvolvimento de Sistemas no Instituto Federal de Ciência, Tecnologia e Educação da Paraíba (IFPB). Atualmente, estou comprometida em me aprimorar continuamente por meio de estudos independentes e cursos online. Valorizo tanto habilidades técnicas quanto pessoais, e sou familiarizada com linguagens de programação como Python, SQL e JavaScript. Meu foco principal está na análise de dados e aprendizado de máquina, buscando constantemente desenvolver minhas habilidades nessas áreas.`,
+            "text2": `Sou uma pessoa dedicada e determinada, sempre disposta a enfrentar desafios. Tenho uma mentalidade de aprendizado contínuo, buscando constantemente aprimorar minhas habilidades e conhecimentos. Sou resiliente diante de obstáculos, capaz de resolver problemas de forma criativa e eficiente. Possuo excelente capacidade de visualização de dados, transformando informações complexas em representações visualmente atraentes e compreensíveis. Minha paixão pela análise de dados me impulsiona a entregar resultados de alta qualidade e a buscar constantemente a excelência.`,
+            "text3": `Tenho a determinação de fazer uma diferença significativa no campo da ciência de dados, trabalhando ao lado de colegas que compartilham minha paixão pela análise de dados e estão dispostos a trabalhar arduamente para alcançar objetivos comuns. Além disso, estou empenhada em aprender idiomas adicionais para me comunicar efetivamente em um ambiente global.`,
             "langTitle": "Idiomas que falo",
             "tbListen": "Escuta",
             "tbSpeak": "Fala",
@@ -131,6 +137,7 @@ $(document).ready(function(){
             "tbPort": "Português",
             "tbEng": "Inglês",
             "tbFr": "Francês",
+            "tbEs": "Espanhol",
             "tbJp": "Japonês",
             "tbNat": "Nativa",
             "tbFluent": "Fluente",
@@ -142,9 +149,9 @@ $(document).ready(function(){
         {
             "lang": "fr",
             "title": "À propos de moi",
-            "text1": `J'ai étudié l'ADS (analyse et développement de systèmes) au campus Cajazeiras de l'IFPB (Instituto Federal da Paraiba) et j'obtiendrai mon diplôme dans quelques mois. Mon objectif est de devenir un excellent développeur de logiciels.`,
-            "text2": `Je suis une personne curieuse, dévouée et motivée et résoudre des problèmes me rend enthousiaste, étudier fait partie de mon quotidien et les défis me motivent à découvrir les meilleures solutions. J'aime programmer, lire et faire du travail d'équipe où je peux apprendre et aussi développer des compétences de collaboration, de leadership et de gestion. J'aime aussi étudier les langues, je parle actuellement couramment l'anglais et j'étudie un peu le français et l'italien par moi-même.`,
-            "text3": `Actuellement, je suis à la recherche d'opportunités dans des postes juniors dans une entreprise qui me permettront d'appliquer mes connaissances afin de développer mes compétences et d'évoluer avec l'entreprise et mes collaborateurs.`,
+            "text1": `Je suis Luciana Ferreira, une professionnelle passionnée par l'analyse de données. J'ai étudié l'analyse et le développement des systèmes à l'Institut fédéral des sciences, de la technologie et de l'éducation de Paraíba (IFPB). Je m'engage actuellement à m'améliorer continuellement grâce à des études indépendantes et des cours en ligne. J'apprécie à la fois les compétences techniques et générales, et je connais les langages de programmation tels que Python, SQL et JavaScript. Je me concentre principalement sur l'analyse de données et l'apprentissage automatique, cherchant constamment à développer mes compétences dans ces domaines.`,
+            "text2": `Je suis une personne dévouée et déterminée, toujours prête à relever des défis. J'ai un état d'esprit d'apprentissage continu, cherchant constamment à améliorer mes compétences et mes connaissances. Je suis résilient face aux obstacles, capable de résoudre les problèmes de manière créative et efficace. J'ai d'excellentes compétences en visualisation de données, transformant des informations complexes en représentations visuellement attrayantes et compréhensibles. Ma passion pour l'analyse de données me pousse à fournir des résultats de haute qualité et à viser constamment l'excellence.`,
+            "text3": `Je suis déterminé à faire une différence significative dans le domaine de la science des données en travaillant aux côtés de collègues qui partagent ma passion pour l'analyse des données et qui sont prêts à travailler dur pour atteindre des objectifs communs. De plus, je m'engage à apprendre des langues supplémentaires pour communiquer efficacement dans un environnement mondial.`,
             "langTitle": "Langues que je parle",
             "tbListen": "Écoute",
             "tbSpeak": "Parlant",
@@ -152,13 +159,36 @@ $(document).ready(function(){
             "tbPort": "Portugais",
             "tbEng": "Anglais",
             "tbFr": "Français",
-            "tbJp": "Japanaise",
+            "tbEs": "Espagnol",
+            "tbJp": "Japanase",
             "tbNat": "Inhérente",
             "tbFluent": "Courante",
             "tbAdv": "Avancée",
             "tbInter": "Intermédiaire",
             "tbBeggin": "Débutante",
             "checkGit": "Découvrez mon github"
+        },
+        {
+            "lang": "es",
+            "title": "Acerca de mí",
+            "text1": `Soy Luciana Ferreira, una profesional apasionada por el análisis de datos. Estudié Análisis y Desarrollo de Sistemas en el Instituto Federal de Ciencia, Tecnología y Educación de Paraíba (IFPB). Actualmente estoy comprometido a mejorar continuamente a través del estudio independiente y cursos en línea. Valoro tanto las habilidades técnicas como las blandas, y estoy familiarizado con lenguajes de programación como Python, SQL y JavaScript. Mi enfoque principal es el análisis de datos y el aprendizaje automático, buscando constantemente desarrollar mis habilidades en estas áreas.`,
+            "text2": `Soy una persona dedicada y decidida, siempre dispuesta a afrontar retos. Tengo una mentalidad de aprendizaje continuo, buscando constantemente mejorar mis habilidades y conocimientos. Soy resiliente frente a los obstáculos, capaz de resolver problemas de manera creativa y eficiente. Tengo excelentes habilidades de visualización de datos, transformando información compleja en representaciones visualmente atractivas y comprensibles. Mi pasión por el análisis de datos me impulsa a ofrecer resultados de alta calidad y luchar constantemente por la excelencia.`,
+            "text3": `Estoy decidido a marcar una diferencia significativa en el campo de la ciencia de datos trabajando junto a colegas que comparten mi pasión por el análisis de datos y están dispuestos a trabajar duro para lograr objetivos comunes. Adicionalmente, me comprometo a aprender idiomas adicionales para comunicarme de manera efectiva en un entorno global.`,
+            "langTitle": "Idiomas que hablo",
+            "tbListen": "Escuchar",
+            "tbSpeak": "Discurso",
+            "tbWrite": "Escribiendo",
+            "tbPort": "Portugais",
+            "tbEng": "Anglais",
+            "tbFr": "Français",
+            "tbEs": "Español",
+            "tbJp": "Japonés",
+            "tbNat": "Inherente",
+            "tbFluent": "Actual",
+            "tbAdv": "Avanzado",
+            "tbInter": "Intermedio",
+            "tbBeggin": "Debutante",
+            "checkGit": "Mira mi github"
         }
     ];
 
@@ -166,32 +196,42 @@ $(document).ready(function(){
         {
             "lang": "en",
             "title": "My services",
-            "title1": "Web",
-            "text1": "I know HTML, CSS, Javascript, Java, Python and other tools as well. There are also some other projects you can check out in my github.",
-            "title2": "Code",
-            "text2": "I aim for good written code. A code not very well written can become a issue in the future.",
-            "title3": "Study",
-            "text3": "Studying is part of my day to day and challenges keep me motivated to discover the best solutions for the coding problems.",
+            "title1": "Python",
+            "text1": "I have advanced Python skills, using it for data analysis, model building and custom solution development. My Python experience allows me to deal with large datasets and apply machine learning algorithms efficiently.",
+            "title2": "Data Analysis",
+            "text2": "I have a solid understanding of data analysis techniques including data cleaning, transformation and visualization. I use tools like pandas and matplotlib to explore and visualize relevant information, providing valuable insights for decision making.",
+            "title3": "SQL",
+            "text3": "I am proficient in SQL and able to extract and manipulate data from relational databases. My SQL skills allow me to perform complex queries, optimize queries and create efficient database structures.",
         },
         {
             "lang": "pt",
             "title": "Meus serviços",
-            "title1": "Web",
-            "text1": "Conheço HTML, CSS, Javascript, Java, Python e outras ferramentas também. Existem também outros projetos que você pode conferir no meu github.",
-            "title2": "Código",
-            "text2": "Meu objetivo é um bom código escrito. Um código não muito bem escrito pode se tornar um problema no futuro.",
-            "title3": "Estudar",
-            "text3": "Estudar faz parte do meu dia a dia e os desafios me motivam a descobrir as melhores soluções para os problemas de códigos.",
+            "title1": "Python",
+            "text1": "Possuo habilidades avançadas em Python, utilizando-o para análise de dados, criação de modelos e desenvolvimento de soluções personalizadas. Minha experiência em Python me permite lidar com grandes conjuntos de dados e aplicar algoritmos de aprendizado de máquina de forma eficiente.",
+            "title2": "Análise de dados",
+            "text2": "Tenho uma sólida compreensão de técnicas de análise de dados, incluindo limpeza, transformação e visualização de dados. Utilizo ferramentas como pandas e matplotlib para explorar e visualizar informações relevantes, fornecendo insights valiosos para a tomada de decisões.",
+            "title3": "SQL",
+            "text3": "Sou proficiente em SQL e capaz de extrair e manipular dados de bancos de dados relacionais. Minha habilidade em SQL me permite realizar consultas complexas, otimizar consultas e criar estruturas de banco de dados eficientes.",
         },
         {
             "lang": "fr",
-            "title": "My services",
-            "title1": "Web",
-            "text1": "Je connais également HTML, CSS, Javascript, Java, Python et d'autres outils. Il existe également d'autres projets que vous pouvez consulter sur mon github.",
-            "title2": "Code",
-            "text2": "Je vise un bon code écrit. Un code pas très bien écrit peut devenir un problème à l'avenir.",
-            "title3": "Étude",
-            "text3": "Studying is part of my day to day and challenges keep me motivated to discover the best solutions for the coding problems.",
+            "title": "Mes services",
+            "title1": "Python",
+            "text1": "J'ai des compétences avancées en Python, je l'utilise pour l'analyse de données, la création de modèles et le développement de solutions personnalisées. Mon expérience Python me permet de traiter de grands ensembles de données et d'appliquer efficacement des algorithmes d'apprentissage automatique.",
+            "title2": "Analyse de données",
+            "text2": "J'ai une solide compréhension des techniques d'analyse de données, y compris le nettoyage, la transformation et la visualisation des données. J'utilise des outils comme pandas et matplotlib pour explorer et visualiser des informations pertinentes, fournissant des informations précieuses pour la prise de décision.",
+            "title3": "SQL",
+            "text3": "Je maîtrise SQL et suis capable d'extraire et de manipuler des données à partir de bases de données relationnelles. Mes compétences en SQL me permettent d'effectuer des requêtes complexes, d'optimiser les requêtes et de créer des structures de base de données efficaces.",
+        },
+        {
+            "lang": "es",
+            "title": "Mis servicios",
+            "title1": "Python",
+            "text1": "Tengo conocimientos avanzados de Python y lo uso para el análisis de datos, la creación de modelos y el desarrollo de soluciones personalizadas. Mi experiencia con Python me permite manejar grandes conjuntos de datos y aplicar algoritmos de aprendizaje automático de manera eficiente.",
+            "title2": "Análisis de datos",
+            "text2": "Tengo una sólida comprensión de las técnicas de análisis de datos, incluida la limpieza, transformación y visualización de datos. Uso herramientas como pandas y matplotlib para explorar y visualizar información relevante, proporcionando información valiosa para la toma de decisiones.",
+            "title3": "SQL",
+            "text3": "Soy competente en SQL y puedo extraer y manipular datos de bases de datos relacionales. Mis conocimientos de SQL me permiten realizar consultas complejas, optimizar consultas y crear estructuras de bases de datos eficientes.",
         }
     ];
 
@@ -200,23 +240,29 @@ $(document).ready(function(){
             "lang": "en",
             "title": "My skills",
             "subtitle": "My creative skill & experiences.",
-            "txt1": "In order to improve my skills, I take lots of online classes to maintain myself on track to what's new. So I usually do projects and maintain it online to show my skills, there are some of it I doesn't put online when I think they doesn't have what is necessary. So even though there's nothing new in my github, that doesn't necesarelly means I'm not doing anything.",
-            "txt2": "I like my code to have quality, so I always go for it, it's good when you can read a code months later and it still make sense."
+            "txt1": "I am a firm believer in the power of continuous learning and am always looking for opportunities to expand my knowledge and skills. I dedicate myself to studying new technologies, trends and methodologies related to data science. My passion for learning and my commitment to continually improving myself allow me to keep pace with the rapid changes and demands of this ever-evolving field.",
+            "txt2": "I value excellence and strive to achieve it in all my activities. I believe that a combination of technical skills, problem-solving skills, and a continuous learning mindset is essential to excel in the field of data science."
         },
         {
             "lang": "pt",
             "title": "Minhas habilidades",
-            "subtitle": "Minhas habilidades criativas e experiências.",
-            "txt1": "Para melhorar minhas habilidades, faço muitas aulas online para me manter atualizada com o que há de novo. Então eu costumo fazer projetos e mantê-los online para mostrar minhas habilidades, tem alguns que não coloco online porque acho que não tem qualidade, então mesmo não tendo nada de novo no meu github, isso não necessariamente significa que não estou fazendo nada.",
-            "txt2": "Gosto que meu código tenha qualidade, então sempre busco por isso, é bom quando você consegue ler um código meses depois e ainda faz sentido."
+            "subtitle": "Acredito firmemente no poder do aprendizado contínuo e estou sempre buscando oportunidades para expandir meu conhecimento e habilidades. Dedico-me a estudar novas tecnologias, tendências e metodologias relacionadas à ciência de dados. Minha paixão por aprender e meu comprometimento em me aprimorar continuamente me permitem acompanhar as rápidas mudanças e demandas desse campo em constante evolução.",
+            "txt2": "Valorizo a excelência e me esforço para alcançá-la em todas as minhas atividades. Acredito que a combinação de habilidades técnicas, capacidade de resolução de problemas e mentalidade de aprendizado contínuo é essencial para se destacar na área de ciência de dados."
         },
         {
             "lang": "fr",
             "title": "Mes compétences",
             "subtitle": "Mes compétences créatives et mes expériences.",
-            "txt1": "Afin d'améliorer mes compétences, je prends beaucoup de cours en ligne pour me tenir au courant des nouveautés. Donc j'ai l'habitude de faire des projets et de les maintenir ensuite en ligne pour montrer mes compétences, il y en a certains que je ne mets pas en ligne car je pense qu'ils n'ont pas la qualité, donc même s'il n'y a rien de nouveau dans mon github, ça ne marche pas signifie nécessairement que je ne fais rien.",
-            "txt2": "J'aime que mon code soit de qualité, donc j'y vais toujours, c'est bien quand on peut lire un code des mois plus tard et que ça a toujours du sens."
+            "txt1": "Je crois fermement au pouvoir de l'apprentissage continu et je suis toujours à la recherche d'occasions d'élargir mes connaissances et mes compétences. Je me consacre à l'étude des nouvelles technologies, tendances et méthodologies liées à la science des données. Ma passion pour l'apprentissage et mon engagement à m'améliorer continuellement me permettent de suivre les changements rapides et les exigences de ce domaine en constante évolution.",
+            "txt2": "Je valorise l'excellence et m'efforce de l'atteindre dans toutes mes activités. Je crois qu'une combinaison de compétences techniques, de compétences en résolution de problèmes et d'un état d'esprit d'apprentissage continu est essentielle pour exceller dans le domaine de la science des données."
         },
+        {
+            "lang": "es",
+            "title": "Mis habilidades",
+            "subtitle": "Mis habilidades creativas y experiencias..",
+            "txt1": "Creo firmemente en el poder del aprendizaje continuo y siempre estoy buscando oportunidades para expandir mis conocimientos y habilidades. Me dedico a estudiar nuevas tecnologías, tendencias y metodologías relacionadas con la ciencia de datos. Mi pasión por aprender y mi compromiso de mejorar continuamente me permiten mantenerme al día con los rápidos cambios y demandas de este campo en constante evolución.",
+            "txt2": "Valoro la excelencia y me esfuerzo por alcanzarla en todas mis actividades. Creo que una combinación de habilidades técnicas, habilidades para resolver problemas y una mentalidad de aprendizaje continuo es esencial para sobresalir en el campo de la ciencia de datos."
+        }
     ];
 
     const projectsData = [
@@ -294,6 +340,36 @@ $(document).ready(function(){
             "proj-title-zombie": "Jeu de zombie",
             "proj-txt-zombie": "Un jeu de zombies réalisé avec C# à Unity, il a de la musique",
         },
+        {
+            "lang": "es",
+            "title": "Mis proyectos",
+            "proj-title-eletc-urn": "Urna Eléctrica",
+            "proj-txt-eletc-urn": "Urna electrónica brasileña, así votamos en las elecciones. Hecho con Javascript",
+
+            "proj-title-onl-paint": "Pintura en línea",
+            "proj-txt-onl-paint": "Lienzo en línea que puedes dibujar y cargar la imagen sin fondo. Hecho con Javascript",
+
+            "proj-title-drumkit": "Kit de batería",
+            "proj-txt-drumkit": "Kit de batería con sonido y animación básica de pulsación de botones (también teclado), hecho con javascript",
+
+            "proj-title-todo": "Lista de Tareas",
+            "proj-txt-todo": "Lista de tareas con reaccionar",
+
+            "proj-title-memory": "Juegos de memoria",
+            "proj-txt-memory": "Simple juego de memoria con javascript",
+
+            "proj-title-tetris": "Juego Tetris",
+            "proj-txt-tetris": "Juego de Tetris con Python",
+
+            "proj-title-git-api": "Proyecto API de Github",
+            "proj-txt-git-api": "Obtener información sobre la API de github de un usuario específico. Hecho con React",
+
+            "proj-title-pacman": "Juego Pacman",
+            "proj-txt-pacman": "Un juego de pacman hecho con python y pygame",
+
+            "proj-title-zombie": "Juego de zombis",
+            "proj-txt-zombie": "Un juego de zombies hecho con C# en Unity, tiene música",
+        },
     ];
 
     const contactData = [
@@ -301,19 +377,26 @@ $(document).ready(function(){
             "lang": "en",
             "title": "Contact me",
             "subtitle": "Get in touch",
-            "text": "Contact me if you want to schedule a meeting to know more about my skills and how I am a good choice for your company."
+            "text": `For those who wish to contact me, I am open to professional opportunities, collaborations or discussions related to data analysis.
+            <br>Please feel free to contact me at:`
         },
         {
             "lang": "pt",
             "title": "Entre em contato",
             "subtitle": "Entre em contato",
-            "text": "Entre em contato comigo caso queira agendar uma reunião para saber mais sobre minhas habilidades e como sou uma boa escolha para sua empresa."
+            "text": `Para quem desejar entrar em contato comigo, estou aberto a oportunidades profissionais, colaborações ou discussões relacionadas à análise de dados.<br>Sinta-se à vontade para me contatar através do`
         },
         {
             "lang": "fr",
             "title": "Contactez moi",
             "subtitle": "Entrer en contact",
-            "text": "Contactez-moi si vous souhaitez planifier une réunion pour en savoir plus sur mes compétences et comment je suis un bon choix pour votre entreprise."
+            "text": `Pour ceux qui souhaitent me contacter, je suis ouvert aux opportunités professionnelles, collaborations ou discussions liées à l'analyse de données.<br>N'hésitez pas à me contacter via`
+        },
+        {
+            "lang": "es",
+            "title": "Contácteme",
+            "subtitle": "Ponerse en contacto",
+            "text": `Para aquellos que deseen contactarme, estoy abierto a oportunidades profesionales, colaboraciones o discusiones relacionadas con el análisis de datos.<br>No dude en ponerse en contacto conmigo a través de`
         },
     ];
 
