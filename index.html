@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/jpg" href="imgs/tools-and-utensils.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -66,7 +67,9 @@
                                     id="en"
                                     name="category"
                                     />
-                                    <label for="en">🇺🇸 En</label>
+                                    <label for="en">
+                                        🇺🇸 En
+                                    </label>
                                 </div>
                                 <div class="option for-changing" language="pt">
                                     <input type="radio" class="radio" id="pt" name="category" />
@@ -76,8 +79,12 @@
                                     <input type="radio" class="radio" id="fr" name="category" />
                                     <label for="fr">🇫🇷 Fr</label>
                                 </div>
+                                <div class="option for-changing" language="fr">
+                                    <input type="radio" class="radio" id="es" name="category" />
+                                    <label for="fr">🇪🇸 Es</label>
+                                </div>
                             </div>
-                            <div class="selected">
+                            <div class="selected"> 
                                 🇺🇸 En
                             </div>
                         </div>
@@ -128,10 +135,10 @@
                         I have studied ADS (analysis and systems development) at the IFPB (Instituto Federal da Paraiba) campus Cajazeiras and will graduate in a few months. As goal, I aim to become an excellent Software Developer.
                     </p>
                     <p id="about-text-2">
-                        I am a curious, dedicated, motivated person and solving problems makes me excited, studying is part of my day to day and challenges keep me motivated to discover the best solutions. I like programming, reading and doing teamwork where I can learn and also develop collaboration, leadership and management skills. I also like to study languages, I am currently fluent in English and I am studying a little French and Italian on my own.
+                        I am a dedicated and determined person, always willing to face challenges. I have a continuous learning mindset, constantly looking to improve my skills and knowledge. I am resilient in the face of obstacles, able to solve problems creatively and efficiently. I have excellent data visualization skills, transforming complex information into visually appealing and understandable representations. My passion for data analysis drives me to deliver high quality results and constantly strive for excellence.
                     </p>
                     <p id="about-text-3">
-                        Currently, I am looking for opportunities in junior positions in a company that will allow me to apply my knowledge so that I can improve myself and grow up with the company and my co-workers.
+                        I am determined to make a significant difference in the field of data science by working alongside colleagues who share my passion for data analysis and are willing to work hard to achieve common goals. Additionally, I am committed to learning additional languages to communicate effectively in a global environment.
                     </p>
                     <h3 id="lang-title" class="my-languages">Languages I speak</h3>
                     <table>
@@ -155,6 +162,12 @@
                         </tr>
                         <tr>
                             <th id="tb-fr">French</th>
+                            <td class="tb-inter">Intermediary</td>
+                            <td class="tb-beggin">Beginner</td>
+                            <td class="tb-inter">Intermediary</td>
+                        </tr>
+                        <tr>
+                            <th id="tb-es">Spanish</th>
                             <td class="tb-inter">Intermediary</td>
                             <td class="tb-beggin">Beginner</td>
                             <td class="tb-inter">Intermediary</td>
@@ -184,25 +197,25 @@
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush">
-                            <div id="services-title-1" class="text">Web</div>
-                            <p id="services-txt-1">I know HTML, CSS, Javascript, Java, Python and other tools as well. There are also some other projects you can check out in my github.</p>
-                        </i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code">
-                            <div id="services-title-2" class="text">Code</div>
-                            <p id="services-txt-2">I aim for good written code. A code not very well written can become a issue in the future.</p>
+                        <i class="fas fa-cubes">
+                            <div id="services-title-1" class="text">Python</div>
+                            <p id="services-txt-1">I have advanced Python skills, using it for data analysis, model building and custom solution development. My Python experience allows me to deal with large datasets and apply machine learning algorithms efficiently.</p>
                         </i>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line">
-                            <div id="services-title-3" class="text">Study</div>
-                            <p id="services-txt-3">Studying is part of my day to day and challenges keep me motivated to discover the best solutions for the coding problems.</p>
+                            <div id="services-title-2" class="text">Data Analysis</div>
+                            <p id="services-txt-2">I have a solid understanding of data analysis techniques including data cleaning, transformation and visualization. I use tools like pandas and matplotlib to explore and visualize relevant information, providing valuable insights for decision making.</p>
+                        </i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-cloud">
+                            <div id="services-title-3" class="text">SQL</div>
+                            <p id="services-txt-3">I am proficient in SQL and able to extract and manipulate data from relational databases. My SQL skills allow me to perform complex queries, optimize queries and create efficient database structures.</p>
                         </i>
                     </div>
                 </div>
@@ -222,8 +235,12 @@
                     <div id="skills-subtitle" class="text">
                         My creative skill & experiences.
                     </div>
-                    <p id="skills-txt-1">In order to improve my skills, I take lots of online classes to maintain myself on track to what's new. So I usually do projects and maintain it online to show my skills, there are some of it I doesn't put online when I think they doesn't have what is necessary. So even though there's nothing new in my github, that doesn't necesarelly means I'm not doing anything.</p>
-                    <p id="skills-txt-2">I like my code to have quality, so I always go for it, it's good when you can read a code months later and it still make sense.</p>
+                    <p id="skills-txt-1">
+                        I am a firm believer in the power of continuous learning and am always looking for opportunities to expand my knowledge and skills. I dedicate myself to studying new technologies, trends and methodologies related to data science. My passion for learning and my commitment to continually improving myself allow me to keep pace with the rapid changes and demands of this ever-evolving field.
+                    </p>
+                    <p id="skills-txt-2">
+                        I value excellence and strive to achieve it in all my activities. I believe that a combination of technical skills, problem-solving skills, and a continuous learning mindset is essential to excel in the field of data science.
+                    </p>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -474,7 +491,7 @@
                         Get in touch
                     </div>
                     <p id="contact-text">
-                        Contact me if you want to schedule a meeting to know more about my skills and how I am a good choice for your company.
+                        For those who wish to contact me, I am open to professional opportunities, collaborations or discussions related to data analysis. <br> Please feel free to contact me at:
                     </p>
                     <div class="icons">
                         <div class="row">
