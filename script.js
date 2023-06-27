@@ -24,13 +24,13 @@ $(document).ready(function(){
     });
     //typing animation
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Frontend"],
+        strings: ["Data Scientist", "Data Analyst", "Machine Learning Engineer", "Data Engineer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
     var typed_2 = new Typed(".typing_2", {
-        strings: ["Developer", "Frontend"],
+        strings: ["Data Scientist", "Data Analyst", "Machine Learning Engineer", "Data Engineer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
